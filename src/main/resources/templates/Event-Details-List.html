@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Event Details Page</title>
+<link rel="stylesheet" th:href="@{/style.css}"></link>
+</head>
+
+<body>
+	<h2>Event Details</h2>
+	<div th:unless="${#lists.isEmpty(allDetailsList)}">
+
+		<dl th:each="eventDetailsEnity : ${allDetailsList}">
+			<dt class="eventDetailsEnityHeadline">
+				Event Id:<span th:text="${eventDetailsEnity.eventid}"></span>, 				
+				<span  th:if="${eventDetailsEnity.type != null}" th:text="'Type: '+ ${eventDetailsEnity.type} +', '"></span>
+				<span  th:if="${eventDetailsEnity.host != null}" th:text="'Host: '+ ${eventDetailsEnity.host} +', '"></span>			
+				Event Duration: <span th:text="${eventDetailsEnity.eventDuration}"></span> millisecond, 
+				Alert: <span  th:text="${eventDetailsEnity.alert}"></span>
+			</dt>
+		</dl>
+
+	</div>
+	<div th:if="${#lists.isEmpty(allDetailsList)}">
+		<p>You have no eventDetails Enity to show</p>
+	</div>
+	
+	<hr />
+</body>
+</html>

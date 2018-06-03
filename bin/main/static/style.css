@@ -1,0 +1,41 @@
+body {
+	background-color: #cccccc;
+	font-family: arial,helvetica,sans-serif;
+}
+
+.eventDetailsEnityHeadline {
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.eventDetailsEnityDescription {
+	font-size: 10pt;
+}
+
+label {
+	font-weight: bold;
+}
+
+.error {
+	color: red;
+}
+
+.errorPage {
+  text-align:center;	
+}
+
+.oops {
+	font-size: 76pt;
+}
+
+.home {
+	color: blue;
+}
+
+.homePage {
+  text-align:center;	
+}
+
+.welcome {
+	font-size: 76pt;
+}

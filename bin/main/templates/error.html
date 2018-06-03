@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Oops!</title>
+    <link rel="stylesheet" th:href="@{/style.css}"></link>
+  </head>
+
+  <html>
+    <div class="errorPage">
+      <span class="oops">Oops! Error Page</span><br/>
+      <img th:src="@{/MissingPage.png}"></img>
+      <p>There seems to be a problem with the page you requested 
+         (<span text="${path}">/App-Server Event Log Analyser App Home Page</span>).</p>
+      <p th:text="${'Details: ' + message}"></p>
+    </div>
+    
+ 	<h2>API Links</h2>		
+		<p><a href="/home">Welcome App Server Event Log Analyser App Home Page</a></p>
+		<p><a href="/Event-Details">Visit  App Server Event Log Details Page</a></p>
+    
+    
+    
+  </html>
+
+</html>
